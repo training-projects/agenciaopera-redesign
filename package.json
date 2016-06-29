@@ -1,0 +1,26 @@
+{
+  "name": "Opera",
+  "version": "1.0.0",
+  "description": "Opera Redesign",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/training-projects/agenciaopera-redesign.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Lima <jonathan633.jl@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "gulp-uglify": "^1.5.3",
+    "gulp-watch": "^4.3.5"
+  }
+}
