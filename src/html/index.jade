@@ -6,8 +6,9 @@ html(lang="en")
 
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 
-		link(rel="stylesheet" href="../css/bootstrap.min.css") 
-		link(rel="stylesheet" href="../css/all.css") 
+		link(rel="stylesheet" href="css/bootstrap.min.css") 
+		link(rel="stylesheet" href="css/all.css") 
+		link(rel="stylesheet" href="css/animate.css") 
 
 		link(href="https://fonts.googleapis.com/css?family=Rokkitt|Ubuntu" rel="stylesheet" type="text/css")
 
@@ -35,17 +36,17 @@ html(lang="en")
 							a(href="") Contato
 		.banner
 			div.container.banner-msg.text-center
-				h1 Olá, somos a 
+				h1.wow.bounceInLeft Olá, somos a 
 					span Ópera!
 
-				h2 Procurando soluções em 
+				h2.wow.bounceInRight(data-wow-delay=".8s") Procurando soluções em 
 					span publicidade 
 					| e 
 					span marketing digital? 
 					br
 					| Nós temos as melhores!
 
-				a(href="#") Saiba mais
+				a(href="#").wow.bounceIn(data-wow-delay="2s") Saiba mais
 			
 		.container
 			main
@@ -54,7 +55,7 @@ html(lang="en")
 						header
 							h2 O que fazemos
 
-						section.thumbnails.text-center.we-do-card.col-lg-4.col-md-6
+						section.thumbnails.text-center.we-do-card.col-lg-4.col-md-6.wow.bounceInUp(data-wow-delay=".8s")
 							header
 								figure
 									img(src="../images/website.svg", alt="")
@@ -67,7 +68,7 @@ html(lang="en")
 							footer
 								button(type="button").btn Saiba mais
 
-						section.thumbnails.text-center.we-do-card.col-lg-4.col-md-6
+						section.thumbnails.text-center.we-do-card.col-lg-4.col-md-6.wow.bounceInUp(data-wow-delay=".9s")
 							header
 								figure
 									img(src="../images/magnifying-glass.svg", alt="")
@@ -80,7 +81,7 @@ html(lang="en")
 							footer
 								button(type="button").btn Saiba mais
 
-						section.thumbnails.text-center.we-do-card.col-lg-4.col-md-6
+						section.thumbnails.text-center.we-do-card.col-lg-4.col-md-6.wow.bounceInUp(data-wow-delay="1s")
 							header
 								figure
 									img(src="../images/form.svg", alt="")
@@ -93,7 +94,7 @@ html(lang="en")
 							footer
 								button(type="button").btn Saiba mais
 
-						section.thumbnails.text-center.we-do-card.col-lg-4.col-md-6
+						section.thumbnails.text-center.we-do-card.col-lg-4.col-md-6.wow.bounceInUp(data-wow-delay="1.3s")
 							header
 								figure
 									img(src="../images/facebook.svg", alt="")
@@ -106,7 +107,7 @@ html(lang="en")
 							footer
 								button(type="button").btn Saiba mais
 
-						section.thumbnails.text-center.we-do-card.col-lg-4.col-md-6
+						section.thumbnails.text-center.we-do-card.col-lg-4.col-md-6.wow.bounceInUp(data-wow-delay="1.4s")
 							header
 								figure
 									img(src="../images/browser.svg", alt="")
@@ -119,7 +120,7 @@ html(lang="en")
 							footer
 								button(type="button").btn Saiba mais
 
-						section.thumbnails.text-center.we-do-card.col-lg-4.col-md-6
+						section.thumbnails.text-center.we-do-card.col-lg-4.col-md-6.wow.bounceInUp(data-wow-delay="1.5s")
 							header
 								figure
 									img(src="../images/megaphone.svg", alt="")
@@ -132,56 +133,95 @@ html(lang="en")
 							footer
 								button(type="button").btn Saiba mais
 
+			.container
 				.row
 					section.google-partner
-					header
-						h3 Trabalhe com um parceiro Google
+						header
+							h3 Trabalhe com um parceiro Google
 
-					section
-						.google-partner-text
-							p A Agência Ópera é certificada pelo Google e pode ajudar a sua empresa com a sua presença digital e publicidade online como Adwords, Display Ads e demais ferramentas.
+						section
+							.google-partner-text
+								p A Agência Ópera é certificada pelo Google e pode ajudar a sua empresa com a sua presença digital e publicidade online como Adwords, Display Ads e demais ferramentas.
 
-							p Conte com a Agência Ópera, reconhecida como agência participante do programa de agências parceiras do Google - Google Partners.
+								p Conte com a Agência Ópera, reconhecida como agência participante do programa de agências parceiras do Google - Google Partners.
 
-						.google-partner-img
-							img(src="", alt="")
-
+							.google-partner-img
+								img(src="", alt="")
+			
+			.container
 				.row
 					section.cases
+						section.cases-model
+							.cases-model-main-img
+								img(src="", alt="")
 
-					section.cases-model
-						.cases-model-main-img
-							img(src="", alt="")
+							header
+								h1 Name Company
 
-						header
-							h1 Name Company
+							article
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quidem debitis sint beatae eveniet odio vitae. A eum ipsam molestiae, magni, ea quae facilis sed numquam obcaecati debitis accusamus quisquam!
 
-						article
-							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quidem debitis sint beatae eveniet odio vitae. A eum ipsam molestiae, magni, ea quae facilis sed numquam obcaecati debitis accusamus quisquam!
-
-						footer
-							a(href="").btn.btn-primary Visitar site
-
+							footer
+								a(href="").btn.btn-primary Visitar site
+			
+			.container
 				.row
 					section.clients
 					.clients-card
 						img(src="", alt="")
 
-				.row
-					section.contact
+		.container
+			.row
+			section.contact
+				h2 Contato
 
-					section
-						form
+				section
+					p Preencha os campos abaixo, nos envie a sua mensagem e aguarde. Entraremos em contato em breve. Se estiver interessado em trabalhar na Ópera envie o seu currículo com portfólio para contato@agenciaopera.com.br. 
+					
+					form(action="" method="")
+						fieldset
+							legend Entre em contato conosco!
+							
+							div.col-sm-6.col-md-6.col-lg-6
+								.form-group
+									label(for="nome") Nome
+									input(type="text").form-control
+								
+								.form-group
+									label(for="email") Email
+									input(type="email").form-control
 
-						div.contact-info
+								.form-group
+									label(for="tel") Telefone
+									input(type="tel").form-control
 
-					.contact-localization
+								.form-group
+									label(for="msg") Mensagem
+									textarea.form-control
 
-				.row
-					footer.navbar
-					.container-fluid
-						p &copy; 2016 Agência Ópera. Todos os direitos reservados.
+								.form-group
+									button.btn.btn-success Enviar
+
+							div.contact-info.col-sm-6.col-md-6.col-lg-6
+								ul
+									li 
+										span.glyphicon.glyphicon contato@agenciaopera.com.br
+									li 
+										span.glyphicon.glyphicon R. Barão de São Borja, 62, Edf. Sigma Center Sala 201 - Boa Vista, Recife - PE
+									li 
+										span.glyphicon.glyphicon (81) 3034-8811
+
+			.contact-localization
+		
+		.container
+			.row
+				footer.navbar
+				.container-fluid
+					p &copy; 2016 Agência Ópera. Todos os direitos reservados.
 
 		script(rel="text/javascript" src="js/jquery-2.2.0.min.js")
 		script(rel="text/javascript" src="js/bootstrap.min.js")
+		script(rel="text/javascript" src="js/wow.min.js")
 		script(rel="text/javascript" src="js/all.js")
+		script
+			| new WOW().init()
