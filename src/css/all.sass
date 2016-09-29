@@ -1,0 +1,191 @@
+// Variables **/
+// ======================================== **/
+
+//// Size
+$sizeFontPattern: 40px
+
+//// Fonts
+$titleFont  		: "Rokkitt", "Serif"
+$generalFont		: "Ubuntu", "Sans Serif"
+
+//// Colors
+$black 				: #000
+$white 				: #fff
+$mainBlue 		: #2ea8d7
+$darkerBlue		: #0f698c
+$lighterBlue	: #85cfeb
+$mainGreen		: #bdc33f
+$darkerGreen	: #537f14
+$lighterGreen	: #bfe18d
+$mainGray			: #ccc
+$darkerGray		: #707070
+$lighterGray	: #f7f7f7
+
+
+// Mixins **/
+// ======================================== **/
+@mixin transition($transition)
+  -webkit-transition: $transition
+  -moz-transition: $transition
+  -ms-transition: $transition
+  -o-transition: $transition
+  transition: $transition
+
+/** General styles **/
+/** ======================================== **/
+*
+	font-family: $generalFont
+	@include transition(ease-in-out 0.3s)
+
+h1, h2, h3, h4, h5, h6
+	font-family: $titleFont
+
+h1
+	font-size: $sizeFontPattern + 20
+ 
+h2
+	font-size: $sizeFontPattern - 5
+
+h3
+	font-size: $sizeFontPattern - 10
+
+h4
+	font-size: $sizeFontPattern - 15
+
+h5
+	font-size: $sizeFontPattern - 20
+
+h6
+	font-size: $sizeFontPattern - 25
+
+/** Header **/
+/** ======================================== **/
+.header
+	background-color: $darkerBlue
+	nav 
+		ul 
+			margin-right: 20px
+			li a
+				color: $white
+
+@media (max-width: 780px)
+	.header nav ul 
+		margin-right: 0
+
+.nav
+	li
+		text-transform: uppercase
+		a
+			border-bottom: 3px solid $darkerBlue
+			font-family: $generalFont
+			font-size: 1.1em
+			margin-left: 5px
+			@include transition(ease-in-out 0.3s)
+
+			&:hover
+				background-color: $darkerBlue
+				border-bottom: 3px solid $mainBlue			
+				color: $white
+				margin-left: 5px
+
+@media (min-width:300px)
+	.navbar-header
+		a
+			img
+				width: 100px
+
+		button
+			@include transition(ease-in-out 0.3s)
+
+			span
+				color: $white
+				
+/** Banner **/
+/** ======================================== **/
+.banner
+	background-image: url('../images/banner.jpg')
+	height: 600px
+	box-shadow: 3px 3px 20px $mainGray
+
+	.banner-msg
+
+	h1
+		margin-top: 130px
+		span
+			font-family: $titleFont
+			font-size: $sizeFontPattern + 15px
+			color: $mainBlue
+
+	h2
+		margin-top: 70px
+		margin-bottom: 100px
+		span
+			font-family: $titleFont
+			font-size: $sizeFontPattern - 5px
+			color: $mainBlue
+
+	a
+		background-color: $darkerGreen
+		border-radius: 10px
+		color: $white
+		font-size: $sizeFontPattern - 25
+		text-decoration: none
+		padding: 15px
+		&:hover
+			background-color: $mainGreen
+
+@media (max-width:500px)
+	.banner .banner-msg h1
+		margin-top: 80px
+
+	.banner .banner-msg h2
+		margin-top: 40px
+		margin-bottom: 40px
+
+/** We do **/
+/** ======================================== **/
+.we-do
+	.we-do-card
+		margin-bottom: 50px
+		padding-top: 10px
+		padding-bottom: 10px
+		&:hover
+			background-color: $lighterGray
+			box-shadow: 3px 3px 20px $mainGray
+
+	img
+		width: 30%
+
+	h2
+		color: $mainBlue
+		margin-bottom: 50px
+
+	h3
+		color: $darkerBlue
+		margin-bottom: 25px
+
+	footer
+		button
+			background-color: $darkerBlue
+			color: $white
+			&:hover
+				background-color: $mainBlue
+				color: $white
+
+@media (max-width: 991px)
+	.we-do
+		.we-do-card
+			border-bottom: 3px solid $lighterGray
+
+/** Cases **/
+/** ======================================== **/
+
+/** Clients **/
+/** ======================================== **/
+
+/** Contact **/
+/** ======================================== **/
+
+/** Footer **/
+/** ======================================== **/
+	
