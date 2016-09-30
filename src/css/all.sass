@@ -221,6 +221,8 @@ h6
 	.google-partner-img img
 		width: 300px
 
+	.google-partner-text p
+		text-align: left
 
 /** Cases **/
 /** ======================================== **/
@@ -263,7 +265,51 @@ h6
 
 /** Contact **/
 /** ======================================== **/
+.contact
 
+	.contact-form
+		background-color: $mainBlue
+		p 
+			color: $white
+			padding: 15px
+			letter-spacing: 1px
+
+		form fieldset
+			legend 
+				font-family: $titleFont
+				padding-left: 15px
+
+			textarea, input
+				border: 2px solid $darkerGray
+				color: $darkerGreen
+
+			textarea:hover, input:hover
+				border: 2px solid $lighterGreen
+
+		.contact-info
+			margin-top: 20px
+			ul 
+				li
+					list-style-type: none
+					color: $black
+					margin-top: 10px
+
+
+					span
+						color: $black
+						margin-right: 20px
+
+			iframe
+				margin: 20px 0
+				padding: 0 5px 0 40px
+
+@media (max-width: 768px)
+	.contact .contact-form form fieldset .contact-info iframe
+		margin: 20px 0
+		padding: 0
+						
 /** Footer **/
 /** ======================================== **/
+footer p
+	margin: 15px
 	
