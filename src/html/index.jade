@@ -46,7 +46,7 @@ html(lang="en")
 					br
 					| Nós temos as melhores!
 
-				a(href="#").wow.bounceIn(data-wow-delay="2s") Saiba mais
+				a(href="#" data-wow-delay="2s").wow.bounceIn.darkgreen-button Saiba mais
 			
 		.container
 			main
@@ -94,7 +94,7 @@ html(lang="en")
 							footer
 								button(type="button").btn Saiba mais
 
-						section.thumbnails.text-center.we-do-card.col-lg-4.col-md-6.wow.bounceInUp(data-wow-delay="1.3s")
+						section.thumbnails.text-center.we-do-card.col-lg-4.col-md-6.wow.bounceInUp(data-wow-delay="0.8s")
 							header
 								figure
 									img(src="../images/facebook.svg", alt="")
@@ -107,7 +107,7 @@ html(lang="en")
 							footer
 								button(type="button").btn Saiba mais
 
-						section.thumbnails.text-center.we-do-card.col-lg-4.col-md-6.wow.bounceInUp(data-wow-delay="1.4s")
+						section.thumbnails.text-center.we-do-card.col-lg-4.col-md-6.wow.bounceInUp(data-wow-delay="0.9s")
 							header
 								figure
 									img(src="../images/browser.svg", alt="")
@@ -120,7 +120,7 @@ html(lang="en")
 							footer
 								button(type="button").btn Saiba mais
 
-						section.thumbnails.text-center.we-do-card.col-lg-4.col-md-6.wow.bounceInUp(data-wow-delay="1.5s")
+						section.thumbnails.text-center.we-do-card.col-lg-4.col-md-6.wow.bounceInUp(data-wow-delay="1s")
 							header
 								figure
 									img(src="../images/megaphone.svg", alt="")
@@ -135,18 +135,22 @@ html(lang="en")
 
 			.container
 				.row
-					section.google-partner
+					section.google-partner.text-center.col-xs-12.col-md-12
 						header
 							h3 Trabalhe com um parceiro Google
 
-						section
-							.google-partner-text
+						article
+							.google-partner-text.col-xs-12.col-sm-8.col-md-8.col-lg-8
 								p A Agência Ópera é certificada pelo Google e pode ajudar a sua empresa com a sua presença digital e publicidade online como Adwords, Display Ads e demais ferramentas.
 
 								p Conte com a Agência Ópera, reconhecida como agência participante do programa de agências parceiras do Google - Google Partners.
+						
+							.google-partner-img.col-xs-12.col-sm-4.col-md-4.col-lg-4
+								img(src="images/googlepartner.png", alt="")
+						
+						footer.col-xs-12.col-sm-12.col-md-12.col-lg-12
+							a(href="").lightergreen-button.text-center Quero saber mais
 
-							.google-partner-img
-								img(src="", alt="")
 			
 			.container
 				.row
@@ -185,15 +189,15 @@ html(lang="en")
 							div.col-sm-6.col-md-6.col-lg-6
 								.form-group
 									label(for="nome") Nome
-									input(type="text").form-control
+									input(type="text" placeholder="Nome completo").form-control
 								
 								.form-group
 									label(for="email") Email
-									input(type="email").form-control
+									input(type="email" placeholder="ex: email@dominio.com.br").form-control
 
 								.form-group
 									label(for="tel") Telefone
-									input(type="tel").form-control
+									input(type="tel" placeholder="ex: (00) 90000 0000").form-control
 
 								.form-group
 									label(for="msg") Mensagem

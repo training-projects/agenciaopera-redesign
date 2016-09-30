@@ -58,6 +58,29 @@ h5
 h6
 	font-size: $sizeFontPattern - 25
 
+.darkgreen-button, .lightergreen-button
+	background-color: $darkerGreen
+	border-radius: 5px
+	box-shadow: 3px 3px 3px $darkerGray
+	color: $white
+	font-size: $sizeFontPattern - 20
+	padding: 15px 30px
+	text-decoration: none
+
+	&:hover
+		background-color: $mainGreen
+		color: $darkerGreen
+		text-decoration: none
+
+.lightergreen-button
+	background-color: $lighterGreen
+	color: $darkerGreen
+	font-size: $sizeFontPattern - 25
+	padding: 10px 20px
+	&:hover
+		background-color: $mainGreen
+		color: $darkerGreen
+
 /** Header **/
 /** ======================================== **/
 .header
@@ -124,18 +147,6 @@ h6
 			font-family: $titleFont
 			font-size: $sizeFontPattern - 5px
 
-	a
-		background-color: $darkerGreen
-		border-radius: 5px
-		box-shadow: 3px 3px 3px $darkerGray
-		color: $white
-		font-size: $sizeFontPattern - 25
-		text-decoration: none
-		padding: 10px 20px
-
-		&:hover
-			background-color: $mainGreen
-
 @media (max-width:500px)
 	.banner .banner-msg h1
 		margin-top: 80px
@@ -178,6 +189,44 @@ h6
 	.we-do
 		.we-do-card
 			border-bottom: 3px solid $lighterGray
+
+/** Google partner **/
+/** ======================================== **/
+.google-partner
+	background-color: $darkerGreen
+	padding: 10px
+
+	header h3
+			color: $lighterGreen
+			text-align: center
+			border-bottom: 1px solid $lighterGreen
+			padding-bottom: 15px
+
+	article
+		.google-partner-text p
+			color: $lighterGray
+			margin: 30px 0
+
+		.google-partner-img img
+			margin-top: 50px
+
+	footer 
+		margin: 30px 0
+		a
+			box-shadow: 3px 3px 5px $darkerGray
+
+@media (min-width: 250px)
+	.google-partner-img img
+		width: 300px
+
+@media (min-width: 768px)
+	.google-partner-img img
+		width: 200px
+
+@media (min-width: 1050px)
+	.google-partner-img img
+		width: 300px
+
 
 /** Cases **/
 /** ======================================== **/
