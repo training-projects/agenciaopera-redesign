@@ -34,6 +34,7 @@ html(lang="en")
 							a(href="") Clientes
 						li
 							a(href="") Contato
+
 		.banner
 			div.container.banner-msg.text-center
 				h1.wow.bounceInLeft Olá, somos a 
@@ -53,7 +54,7 @@ html(lang="en")
 				.row
 					section.we-do
 						header
-							h2 O que fazemos
+							h2.secondary-title O que fazemos
 
 						section.thumbnails.text-center.we-do-card.col-lg-4.col-md-6.wow.bounceInUp(data-wow-delay=".8s")
 							header
@@ -150,34 +151,93 @@ html(lang="en")
 						
 						footer.col-xs-12.col-sm-12.col-md-12.col-lg-12
 							a(href="").lightergreen-button.text-center Quero saber mais
-
 			
 			.container
 				.row
 					section.cases
-						section.cases-model
-							.cases-model-main-img
-								img(src="", alt="")
+						h2.secondary-title Cases
 
-							header
-								h1 Name Company
+						#myCarousel.carousel.slide(data-ride="carousel")
+							.carousel-inner(role="listbox")
+								.item.active
+									section.cases-model
+										.cases-model-main-img.col-xs-12.col-sm-6.col-md-6.col-lg-6.text-right
+											img(src="images/hm_consultoria.png", alt="")
+										
+										.cases-model-main-info.col-xs-12.col-sm-6.col-md-6.col-lg-6.text-left
+											header
+												h1 HM Consultoria
 
-							article
-								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quidem debitis sint beatae eveniet odio vitae. A eum ipsam molestiae, magni, ea quae facilis sed numquam obcaecati debitis accusamus quisquam!
+											article
+												p  Criamos o novo site da HM Consultoria em Franquias e Varejo. Cuidamos da estratégia do Google AdWords e de todo marketing digital da empresa, incluindo redes sociais. 
 
-							footer
-								a(href="").btn.btn-primary Visitar site
+											footer
+												a(href="").btn.btn-success Visitar site
+
+								.item
+									section.cases-model
+										.cases-model-main-img.col-xs-12.col-sm-6.col-md-6.col-lg-6.text-right
+											img(src="images/hm_consultoria.png", alt="")
+										
+										.cases-model-main-info.col-xs-12.col-sm-6.col-md-6.col-lg-6.text-left
+											header
+												h1 HM Consultoria
+
+											article
+												p  Criamos o novo site da HM Consultoria em Franquias e Varejo. Cuidamos da estratégia do Google AdWords e de todo marketing digital da empresa, incluindo redes sociais. 
+
+											footer
+												a(href="").btn.btn-success Visitar site
+
+								.item
+									section.cases-model
+										.cases-model-main-img.col-xs-12.col-sm-6.col-md-6.col-lg-6.text-right
+											img(src="images/hm_consultoria.png", alt="")
+										
+										.cases-model-main-info.col-xs-12.col-sm-6.col-md-6.col-lg-6.text-left
+											header
+												h1 HM Consultoria
+
+											article
+												p  Criamos o novo site da HM Consultoria em Franquias e Varejo. Cuidamos da estratégia do Google AdWords e de todo marketing digital da empresa, incluindo redes sociais. 
+
+											footer
+												a(href="").btn.btn-success Visitar site
+
+								.item
+									section.cases-model
+										.cases-model-main-img.col-xs-12.col-sm-6.col-md-6.col-lg-6.text-right
+											img(src="images/hm_consultoria.png", alt="")
+										
+										.cases-model-main-info.col-xs-12.col-sm-6.col-md-6.col-lg-6.text-left
+											header
+												h1 HM Consultoria
+
+											article
+												p  Criamos o novo site da HM Consultoria em Franquias e Varejo. Cuidamos da estratégia do Google AdWords e de todo marketing digital da empresa, incluindo redes sociais. 
+
+											footer
+												a(href="").btn.btn-success Visitar site
+
+							a.left.carousel-control(href="#myCarousel" role="button" data-slide="prev")
+								span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+								span.sr-only Previous
+							
+							a.right.carousel-control(href="#myCarousel" role="button" data-slide="next")
+								span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+								span.sr-only Next
 			
 			.container
 				.row
 					section.clients
-					.clients-card
-						img(src="", alt="")
+						h2.secondary-title Clientes
+						.clients-card
+							img(src="", alt="")
 
 		.container
 			.row
 			section.contact
-				h2 Contato
+				h2.secondary-title Contato
 
 				section
 					p Preencha os campos abaixo, nos envie a sua mensagem e aguarde. Entraremos em contato em breve. Se estiver interessado em trabalhar na Ópera envie o seu currículo com portfólio para contato@agenciaopera.com.br. 

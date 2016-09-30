@@ -58,6 +58,10 @@ h5
 h6
 	font-size: $sizeFontPattern - 25
 
+.secondary-title
+	color: $mainBlue
+	margin-bottom: 50px
+
 .darkgreen-button, .lightergreen-button
 	background-color: $darkerGreen
 	border-radius: 5px
@@ -66,7 +70,6 @@ h6
 	font-size: $sizeFontPattern - 20
 	padding: 15px 30px
 	text-decoration: none
-
 	&:hover
 		background-color: $mainGreen
 		color: $darkerGreen
@@ -75,11 +78,6 @@ h6
 .lightergreen-button
 	background-color: $lighterGreen
 	color: $darkerGreen
-	font-size: $sizeFontPattern - 25
-	padding: 10px 20px
-	&:hover
-		background-color: $mainGreen
-		color: $darkerGreen
 
 /** Header **/
 /** ======================================== **/
@@ -169,10 +167,6 @@ h6
 	img
 		width: 30%
 
-	h2
-		color: $mainBlue
-		margin-bottom: 50px
-
 	h3
 		color: $darkerBlue
 		margin-bottom: 25px
@@ -197,10 +191,10 @@ h6
 	padding: 10px
 
 	header h3
-			color: $lighterGreen
-			text-align: center
-			border-bottom: 1px solid $lighterGreen
-			padding-bottom: 15px
+		color: $lighterGreen
+		text-align: center
+		border-bottom: 1px solid $lighterGreen
+		padding-bottom: 15px
 
 	article
 		.google-partner-text p
@@ -230,6 +224,39 @@ h6
 
 /** Cases **/
 /** ======================================== **/
+.cases-model
+	.cases-model-main-img
+		img
+			width: 60%
+
+	.cases-model-main-info
+		header
+			h1
+				font-size: $sizeFontPattern - 10
+		article
+			p
+				margin: 20px 0
+				width: 80%
+
+.carousel-control.left, .carousel-control.right 
+	background-image: none
+
+.glyphicon-chevron-left, .glyphicon-chevron-right
+	color: $black
+
+@media (max-width: 768px)
+	.cases-model .cases-model-main-img
+		text-align: center
+	
+	.cases-model .cases-model-main-img img
+		width: 80%
+
+	.cases-model .cases-model-main-info
+		text-align: center
+	
+	.cases-model .cases-model-main-info article p
+		margin: 20px 0
+		width: 100%
 
 /** Clients **/
 /** ======================================== **/
