@@ -11,6 +11,11 @@
 
 
 ### Workflow
+- Jade
+- Gulp
+- SASS
+- Bootstrap
+- JQuery
 
 ### About the project
 
