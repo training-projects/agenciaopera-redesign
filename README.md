@@ -1,10 +1,9 @@
 # Redesign - Agência Ópera
 
 - [Agência Ópera - Original website](http://www.agenciaopera.com.br/index.html)
-- Site coded by @jonathanslima
-- Site coded by @idlua
+- [Link to site coded](http://jonathanlima.com.br/redesign-opera) by @jonathanslima
 
-<!-- ![Layout](http://jonathanlima.com.br/Opera.jpg) -->
+![Layout](src/layout.jpg)
 
 ## Developers
 - [Jonathan Lima (@jonathanslima)](https://github.com/jonathanslima)

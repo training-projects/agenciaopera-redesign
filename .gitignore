@@ -5,3 +5,5 @@ _id-visual
 build
 node_modules/
 _styleguide/
+ssh-key
+ssh-key.pub
