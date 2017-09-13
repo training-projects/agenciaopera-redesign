@@ -1,6 +1,7 @@
 # Redesign - Agência Ópera
 
 - [Agência Ópera - Original website](http://www.agenciaopera.com.br/index.html)
+- [Site codado por @jonathanslima](http://jonathanslima.com.br/redesign-opera/)
 
 ![Layout](src/layout.jpg)
 
